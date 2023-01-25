@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin"
+    android:layoutDirection="ltr"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/margin"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview_move"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="2:3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/image_move" />
+
+
+        <TextView
+            android:id="@+id/textName_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:text="Move Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:maxLength="18"
+            app:layout_constraintStart_toEndOf="@+id/imageview_move"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textType_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:text="Type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:maxLength="18"
+            app:layout_constraintStart_toEndOf="@+id/imageview_move"
+            app:layout_constraintTop_toBottomOf="@id/textName_move"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textYear_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:text="Year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:maxLength="18"
+            app:layout_constraintStart_toEndOf="@+id/imageview_move"
+            app:layout_constraintTop_toBottomOf="@id/textType_move"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
